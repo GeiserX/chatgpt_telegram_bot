@@ -26,7 +26,7 @@ services:
       - 8081:8081
     environment:
       - ME_CONFIG_MONGODB_SERVER=chatgpt_telegram_mongo
-      - ME_CONFIG_MONGODB_PORT=27017
+      - ME_CONFIG_MONGODB_PORT=${MONGODB_PORT:-27017}
       - ME_CONFIG_MONGODB_ENABLE_ADMIN=false
       - ME_CONFIG_MONGODB_AUTH_DATABASE=chatgpt_telegram_bot
       - ME_CONFIG_BASICAUTH_USERNAME=admin
