@@ -28,6 +28,6 @@ services:
       - ME_CONFIG_MONGODB_ENABLE_ADMIN=false
       - ME_CONFIG_MONGODB_AUTH_DATABASE=chatgpt_telegram_bot
       - ME_CONFIG_BASICAUTH_USERNAME=admin
-      - ME_CONFIG_BASICAUTH_PASSWORD=$PASSWORD
+      - ME_CONFIG_BASICAUTH_PASSWORD=${PASSWORD}
     depends_on:
       - mongo
